@@ -9,10 +9,11 @@
     height: 400px;
     margin: 20px auto;
     transition: all 0.2s ease-in-out;
+    text-shadow: 50px 50px 50px 50px #000000;
 }
 .wall_img_1:hover,
 .wall_img_2:hover {
-    filter: grayscale(80%);
+    filter: grayscale(0%);
 }
 .wall_img_1:before,
 .wall_img_2:before {
@@ -24,9 +25,8 @@
     top: 40%;
     text-align: center;
     display: block;
-    font-size: 22px;
-    color: #fff;
-    mix-blend-mode: overlay;
+    font-size: 45px;
+    color: rgb(223, 223, 217);
 }
 .wall_img_1:hover::before,
 .wall_img_2:hover::before {
