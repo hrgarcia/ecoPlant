@@ -7,21 +7,159 @@
         <!-- CSS only -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
         <link rel="stylesheet" href="/css/style.css" />
-        <title>EcoPlant</title>
+
     </head>
     <body>
+        <!-- sidebar -->
+        <nav class="navbar navbar-expand d-flex flex-column align-item-start" id="sidebar">
+            <a href="#" class="navbar-brand text-light mt-5">
+                <div class="display-5 font-weight-bold">EcoPlant</div>
+                <img src="/img/logo.png" class="img-thumbnail">
+            </a>
+            <ul class="navbar-nav d-flex flex-column mt-5 w-100">
+                <li class="nav-item w-100">
+                    <a href="#" class="nav-link text-light pl-4">Escuela proA - Sede centro Pucará</a>
+                </li>
+                <li class="nav-item w-100">
+                    <a href="#" class="nav-link text-light pl-4">Galería de fotos</a>
+                </li>
+                <li class="nav-item w-100">
+                    <a href="#" class="nav-link text-light pl-4">Las siguientes fotos retratan la jornada compartida por docentes y estudiantes del ciclo orientado un hermoso día lunes de octubre.</a>
+                </li>
+            </ul>
+        </nav>
+        <section class="p-4 my-container">
+            <button class="btn my-4" id="menu-btn">Info</button>
+
+            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.min.js" integrity="sha384-5h4UG+6GOuV9qXh6HqOLwZMY4mnLPraeTrjT5v07o347pj6IkfuoASuGBhfDsp3d" crossorigin="anonymous"></script>
+    <!-- custom js -->
+    <script>
+        var menu_btn = document.querySelector("#menu-btn")
+        var sidebar = document.querySelector("#sidebar")
+        var container = document.querySelector(".my-container")
+        menu_btn.addEventListener("click", () => {
+            sidebar.classList.toggle("active-nav")
+            container.classList.toggle("active-cont")
+        })
+    </script>
+        <!-- sidebar -->
         <div class="container-fluid position-relative overflow-hidden">
             <div class="row">
-                <div class="col-md-8 offset-md-2">
-                    <div class="lc-block text-center">
-                        <span editable="inline" class="small mt-4 d-block">Escuela proA - Sede centro Pucará</span>
-                        <h2 editable="inline" class="display-2 mb-0"><b>Galería de fotos</b></h2>
-                        <p editable="inline">Las siguientes fotos retratan la jornada compartida por docentes y estudiantes del ciclo orientado un hermoso día lunes de octubre.</p>
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="lc-block">
+                                <div lc-helper="background" class="wall_img_1 rounded" style="background-size: cover; background-position: center; background-image: url('/img/1.jpg')" id="EcoPlant"></div>
+                                <div
+                                    lc-helper="background"
+                                    class="wall_img_1 rounded"
+                                    style="background-size: cover; background-position: center; background-image: url('/img/10.jpg')"
+                                    id="EcoPlant"
+                                ></div>
+                            </div>
+                            <!-- /lc-block -->
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="lc-block">
+                                <div lc-helper="background" class="wall_img_2 rounded" style="background-size: cover; background-position: center; background-image: url('/img/2.jpg')" id="EcoPlant"></div>
+                            </div>
+                            <div class="lc-block">
+                                <div lc-helper="background" class="wall_img_2 rounded" style="background-size: cover; background-position: center; background-image: url('/img/3.jpg')" id="EcoPlant"></div>
+                            </div>
+                            <div class="lc-block">
+                                <div
+                                    lc-helper="background"
+                                    class="wall_img_2 rounded"
+                                    style="
+                                        background-size: cover;
+                                        background-position: center;
+                                        background-image: url('/img/4.jpg');
+                                    "
+                                    id="EcoPlant"
+                                ></div>
+                            </div>
+                            <!-- /lc-block -->
+                        </div>
+                    </div>
+                    <!-- /lc-block -->
+                </div>
+                <!-- /col -->
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="lc-block">
+                                <div
+                                    lc-helper="background"
+                                    class="wall_img_1 rounded"
+                                    style="
+                                        background-size: cover;
+                                        background-position: center;
+                                        background-image: url('/img/5.jpg');
+                                    "
+                                    id="EcoPlant"
+                                ></div>
+                            </div>
+                            <div class="lc-block">
+                                <div
+                                    lc-helper="background"
+                                    class="wall_img_1 rounded"
+                                    style="
+                                        background-size: cover;
+                                        background-position: center;
+                                        background-image: url('/img/6.jpg');
+                                    "
+                                    id="EcoPlant"
+                                ></div>
+                            </div>
+                            <!-- /lc-block -->
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="lc-block">
+                                <div
+                                    lc-helper="background"
+                                    class="wall_img_2 rounded"
+                                    style="
+                                        background-size: cover;
+                                        background-position: center;
+                                        background-image: url('/img/7.jpg');
+                                    "
+                                    id="EcoPlant"
+                                ></div>
+                            </div>
+                            <div class="lc-block">
+                                <div
+                                    lc-helper="background"
+                                    class="wall_img_2 rounded"
+                                    style="
+                                        background-size: cover;
+                                        background-position: center;
+                                        background-image: url('/img/8.jpg');
+                                    "
+                                    id="EcoPlant"
+                                ></div>
+                            </div>
+                            <div class="lc-block">
+                                <div
+                                    lc-helper="background"
+                                    class="wall_img_2 rounded"
+                                    style="
+                                        background-size: cover;
+                                        background-position: center;
+                                        background-image: url('/img/9.jpg');
+                                    "
+                                    id="EcoPlant"
+                                ></div>
+                            </div>
+                            
+                            <!-- /lc-block -->
+                        </div>
                     </div>
                     <!-- /lc-block -->
                 </div>
                 <!-- /col -->
             </div>
+            <!-- mas fotos-->
             <div class="row">
                 <div class="col-lg-6">
                     <div class="row">
@@ -31,8 +169,8 @@
                                 <div
                                     lc-helper="background"
                                     class="wall_img_1 rounded"
-                                    style="background-size: cover; background-position: center; background-image: url('https://images.unsplash.com/photo-1532932371123-928bc0091ec0?ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=635&amp;q=80')"
-                                    id="landscape 2"
+                                    style="background-size: cover; background-position: center; background-image: url('/img/12.jpg')"
+                                    id="EcoPlant"
                                 ></div>
                             </div>
                             <!-- /lc-block -->
@@ -51,9 +189,9 @@
                                     style="
                                         background-size: cover;
                                         background-position: center;
-                                        background-image: url('https://images.unsplash.com/photo-1462678522506-09a896e3d33f?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1000&amp;q=80');
+                                        background-image: url('/img/13.jpg');
                                     "
-                                    id="landscape 3"
+                                    id="EcoPlant"
                                 ></div>
                             </div>
                             <!-- /lc-block -->
@@ -72,9 +210,9 @@
                                     style="
                                         background-size: cover;
                                         background-position: center;
-                                        background-image: url('https://images.unsplash.com/photo-1545221858-0c888a4f9058?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=634&amp;q=80');
+                                        background-image: url('/img/14.jpg');
                                     "
-                                    id="My photo"
+                                    id="EcoPlant"
                                 ></div>
                             </div>
                             <div class="lc-block">
@@ -84,9 +222,9 @@
                                     style="
                                         background-size: cover;
                                         background-position: center;
-                                        background-image: url('https://images.unsplash.com/photo-1569764760476-5e1f2eb09c42?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=675&amp;q=80');
+                                        background-image: url('/img/15.jpg');
                                     "
-                                    id="landscape 5"
+                                    id="EcoPlant"
                                 ></div>
                             </div>
                             <!-- /lc-block -->
@@ -99,9 +237,9 @@
                                     style="
                                         background-size: cover;
                                         background-position: center;
-                                        background-image: url('https://images.unsplash.com/photo-1566380351847-6703d9e86886?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1000&amp;q=80');
+                                        background-image: url('/img/16.jpg');
                                     "
-                                    id="landscape 8"
+                                    id="EcoPlant"
                                 ></div>
                             </div>
                             <div class="lc-block">
@@ -111,9 +249,9 @@
                                     style="
                                         background-size: cover;
                                         background-position: center;
-                                        background-image: url('https://images.unsplash.com/photo-1436377991866-f9af228d2b47?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1000&amp;q=80');
+                                        background-image: url('/img/17.jpg');
                                     "
-                                    id="landscape 11"
+                                    id="EcoPlant"
                                 ></div>
                             </div>
                             <div class="lc-block">
@@ -123,9 +261,54 @@
                                     style="
                                         background-size: cover;
                                         background-position: center;
-                                        background-image: url('https://images.unsplash.com/photo-1560390984-5b636c4cb1de?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=792&amp;q=80');
+                                        background-image: url('/img/18.jpg');
                                     "
-                                    id="landscape 10"
+                                    id="EcoPlant"
+                                ></div>
+                            </div>
+                            
+                            <!-- /lc-block -->
+                        </div>
+                    </div>
+                    <!-- /lc-block -->
+                </div>
+                <!-- /col -->
+            </div>
+            <!-- mas fotos-->
+
+            <!--mas fotos-->
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="lc-block">
+                                <div lc-helper="background" class="wall_img_1 rounded" style="background-size: cover; background-position: center; background-image: url('/img/1.jpg')" id="The Photo Title"></div>
+                                <div
+                                    lc-helper="background"
+                                    class="wall_img_1 rounded"
+                                    style="background-size: cover; background-position: center; background-image: url('/img/19.jpg')"
+                                    id="EcoPlant"
+                                ></div>
+                            </div>
+                            <!-- /lc-block -->
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="lc-block">
+                                <div lc-helper="background" class="wall_img_2 rounded" style="background-size: cover; background-position: center; background-image: url('/img/2.jpg')" id="My title goes here"></div>
+                            </div>
+                            <div class="lc-block">
+                                <div lc-helper="background" class="wall_img_2 rounded" style="background-size: cover; background-position: center; background-image: url('/img/3.jpg')" id="This is my landscape"></div>
+                            </div>
+                            <div class="lc-block">
+                                <div
+                                    lc-helper="background"
+                                    class="wall_img_2 rounded"
+                                    style="
+                                        background-size: cover;
+                                        background-position: center;
+                                        background-image: url('/img/20.jpg');
+                                    "
+                                    id="EcoPlant"
                                 ></div>
                             </div>
                             <!-- /lc-block -->
@@ -134,7 +317,549 @@
                     <!-- /lc-block -->
                 </div>
                 <!-- /col -->
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="lc-block">
+                                <div
+                                    lc-helper="background"
+                                    class="wall_img_1 rounded"
+                                    style="
+                                        background-size: cover;
+                                        background-position: center;
+                                        background-image: url('/img/21.jpg');
+                                    "
+                                    id="EcoPlant"
+                                ></div>
+                            </div>
+                            <div class="lc-block">
+                                <div
+                                    lc-helper="background"
+                                    class="wall_img_1 rounded"
+                                    style="
+                                        background-size: cover;
+                                        background-position: center;
+                                        background-image: url('/img/22.jpg');
+                                    "
+                                    id="EcoPlant"
+                                ></div>
+                            </div>
+                            <!-- /lc-block -->
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="lc-block">
+                                <div
+                                    lc-helper="background"
+                                    class="wall_img_2 rounded"
+                                    style="
+                                        background-size: cover;
+                                        background-position: center;
+                                        background-image: url('/img/23.jpg');
+                                    "
+                                    id="EcoPlant"
+                                ></div>
+                            </div>
+                            <div class="lc-block">
+                                <div
+                                    lc-helper="background"
+                                    class="wall_img_2 rounded"
+                                    style="
+                                        background-size: cover;
+                                        background-position: center;
+                                        background-image: url('/img/24.jpg');
+                                    "
+                                    id="EcoPlant"
+                                ></div>
+                            </div>
+                            <div class="lc-block">
+                                <div
+                                    lc-helper="background"
+                                    class="wall_img_2 rounded"
+                                    style="
+                                        background-size: cover;
+                                        background-position: center;
+                                        background-image: url('/img/25.jpg');
+                                    "
+                                    id="EcoPlant"
+                                ></div>
+                            </div>
+                            
+                            <!-- /lc-block -->
+                        </div>
+                    </div>
+                    <!-- /lc-block -->
+                </div>
+                <!-- /col -->
             </div>
+            <!--mas fotos-->
+
+            <!--mas fotos-->
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="lc-block">
+                                <div lc-helper="background" class="wall_img_1 rounded" style="background-size: cover; background-position: center; background-image: url('/img/1.jpg')" id="The Photo Title"></div>
+                                <div
+                                    lc-helper="background"
+                                    class="wall_img_1 rounded"
+                                    style="background-size: cover; background-position: center; background-image: url('/img/26.jpg')"
+                                    id="EcoPlant"
+                                ></div>
+                            </div>
+                            <!-- /lc-block -->
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="lc-block">
+                                <div lc-helper="background" class="wall_img_2 rounded" style="background-size: cover; background-position: center; background-image: url('/img/2.jpg')" id="My title goes here"></div>
+                            </div>
+                            <div class="lc-block">
+                                <div lc-helper="background" class="wall_img_2 rounded" style="background-size: cover; background-position: center; background-image: url('/img/3.jpg')" id="This is my landscape"></div>
+                            </div>
+                            <div class="lc-block">
+                                <div
+                                    lc-helper="background"
+                                    class="wall_img_2 rounded"
+                                    style="
+                                        background-size: cover;
+                                        background-position: center;
+                                        background-image: url('/img/27.jpg');
+                                    "
+                                    id="EcoPlant"
+                                ></div>
+                            </div>
+                            <!-- /lc-block -->
+                        </div>
+                    </div>
+                    <!-- /lc-block -->
+                </div>
+                <!-- /col -->
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="lc-block">
+                                <div
+                                    lc-helper="background"
+                                    class="wall_img_1 rounded"
+                                    style="
+                                        background-size: cover;
+                                        background-position: center;
+                                        background-image: url('/img/28.jpg');
+                                    "
+                                    id="EcoPlant"
+                                ></div>
+                            </div>
+                            <div class="lc-block">
+                                <div
+                                    lc-helper="background"
+                                    class="wall_img_1 rounded"
+                                    style="
+                                        background-size: cover;
+                                        background-position: center;
+                                        background-image: url('/img/29.jpg');
+                                    "
+                                    id="EcoPlant"
+                                ></div>
+                            </div>
+                            <!-- /lc-block -->
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="lc-block">
+                                <div
+                                    lc-helper="background"
+                                    class="wall_img_2 rounded"
+                                    style="
+                                        background-size: cover;
+                                        background-position: center;
+                                        background-image: url('/img/30.jpg');
+                                    "
+                                    id="EcoPlant"
+                                ></div>
+                            </div>
+                            <div class="lc-block">
+                                <div
+                                    lc-helper="background"
+                                    class="wall_img_2 rounded"
+                                    style="
+                                        background-size: cover;
+                                        background-position: center;
+                                        background-image: url('/img/31.jpg');
+                                    "
+                                    id="EcoPlant"
+                                ></div>
+                            </div>
+                            <div class="lc-block">
+                                <div
+                                    lc-helper="background"
+                                    class="wall_img_2 rounded"
+                                    style="
+                                        background-size: cover;
+                                        background-position: center;
+                                        background-image: url('/img/32.jpg');
+                                    "
+                                    id="EcoPlant"
+                                ></div>
+                            </div>
+                            
+                            <!-- /lc-block -->
+                        </div>
+                    </div>
+                    <!-- /lc-block -->
+                </div>
+                <!-- /col -->
+            </div>
+            <!--mas fotos-->
+
+            <!--mas fotos-->
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="lc-block">
+                                <div lc-helper="background" class="wall_img_1 rounded" style="background-size: cover; background-position: center; background-image: url('/img/1.jpg')" id="The Photo Title"></div>
+                                <div
+                                    lc-helper="background"
+                                    class="wall_img_1 rounded"
+                                    style="background-size: cover; background-position: center; background-image: url('/img/33.jpg')"
+                                    id="EcoPlant"
+                                ></div>
+                            </div>
+                            <!-- /lc-block -->
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="lc-block">
+                                <div lc-helper="background" class="wall_img_2 rounded" style="background-size: cover; background-position: center; background-image: url('/img/2.jpg')" id="My title goes here"></div>
+                            </div>
+                            <div class="lc-block">
+                                <div lc-helper="background" class="wall_img_2 rounded" style="background-size: cover; background-position: center; background-image: url('/img/3.jpg')" id="This is my landscape"></div>
+                            </div>
+                            <div class="lc-block">
+                                <div
+                                    lc-helper="background"
+                                    class="wall_img_2 rounded"
+                                    style="
+                                        background-size: cover;
+                                        background-position: center;
+                                        background-image: url('/img/34.jpg');
+                                    "
+                                    id="EcoPlant"
+                                ></div>
+                            </div>
+                            <!-- /lc-block -->
+                        </div>
+                    </div>
+                    <!-- /lc-block -->
+                </div>
+                <!-- /col -->
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="lc-block">
+                                <div
+                                    lc-helper="background"
+                                    class="wall_img_1 rounded"
+                                    style="
+                                        background-size: cover;
+                                        background-position: center;
+                                        background-image: url('/img/35.jpg');
+                                    "
+                                    id="EcoPlant"
+                                ></div>
+                            </div>
+                            <div class="lc-block">
+                                <div
+                                    lc-helper="background"
+                                    class="wall_img_1 rounded"
+                                    style="
+                                        background-size: cover;
+                                        background-position: center;
+                                        background-image: url('/img/36.jpg');
+                                    "
+                                    id="EcoPlant"
+                                ></div>
+                            </div>
+                            <!-- /lc-block -->
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="lc-block">
+                                <div
+                                    lc-helper="background"
+                                    class="wall_img_2 rounded"
+                                    style="
+                                        background-size: cover;
+                                        background-position: center;
+                                        background-image: url('/img/37.jpg');
+                                    "
+                                    id="EcoPlant"
+                                ></div>
+                            </div>
+                            <div class="lc-block">
+                                <div
+                                    lc-helper="background"
+                                    class="wall_img_2 rounded"
+                                    style="
+                                        background-size: cover;
+                                        background-position: center;
+                                        background-image: url('/img/38.jpg');
+                                    "
+                                    id="EcoPlant"
+                                ></div>
+                            </div>
+                            <div class="lc-block">
+                                <div
+                                    lc-helper="background"
+                                    class="wall_img_2 rounded"
+                                    style="
+                                        background-size: cover;
+                                        background-position: center;
+                                        background-image: url('/img/39.jpg');
+                                    "
+                                    id="EcoPlant"
+                                ></div>
+                            </div>
+                            
+                            <!-- /lc-block -->
+                        </div>
+                    </div>
+                    <!-- /lc-block -->
+                </div>
+                <!-- /col -->
+            </div>
+            <!-- mas fotos-->
+
+            <!--mas fotos-->
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="lc-block">
+                                <div lc-helper="background" class="wall_img_1 rounded" style="background-size: cover; background-position: center; background-image: url('/img/1.jpg')" id="The Photo Title"></div>
+                                <div
+                                    lc-helper="background"
+                                    class="wall_img_1 rounded"
+                                    style="background-size: cover; background-position: center; background-image: url('/img/40.jpg')"
+                                    id="EcoPlant"
+                                ></div>
+                            </div>
+                            <!-- /lc-block -->
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="lc-block">
+                                <div lc-helper="background" class="wall_img_2 rounded" style="background-size: cover; background-position: center; background-image: url('/img/2.jpg')" id="My title goes here"></div>
+                            </div>
+                            <div class="lc-block">
+                                <div lc-helper="background" class="wall_img_2 rounded" style="background-size: cover; background-position: center; background-image: url('/img/3.jpg')" id="This is my landscape"></div>
+                            </div>
+                            <div class="lc-block">
+                                <div
+                                    lc-helper="background"
+                                    class="wall_img_2 rounded"
+                                    style="
+                                        background-size: cover;
+                                        background-position: center;
+                                        background-image: url('/img/41.jpg');
+                                    "
+                                    id="EcoPlant"
+                                ></div>
+                            </div>
+                            <!-- /lc-block -->
+                        </div>
+                    </div>
+                    <!-- /lc-block -->
+                </div>
+                <!-- /col -->
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="lc-block">
+                                <div
+                                    lc-helper="background"
+                                    class="wall_img_1 rounded"
+                                    style="
+                                        background-size: cover;
+                                        background-position: center;
+                                        background-image: url('/img/42.jpg');
+                                    "
+                                    id="EcoPlant"
+                                ></div>
+                            </div>
+                            <div class="lc-block">
+                                <div
+                                    lc-helper="background"
+                                    class="wall_img_1 rounded"
+                                    style="
+                                        background-size: cover;
+                                        background-position: center;
+                                        background-image: url('/img/43.jpg');
+                                    "
+                                    id="EcoPlant"
+                                ></div>
+                            </div>
+                            <!-- /lc-block -->
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="lc-block">
+                                <div
+                                    lc-helper="background"
+                                    class="wall_img_2 rounded"
+                                    style="
+                                        background-size: cover;
+                                        background-position: center;
+                                        background-image: url('/img/44.jpg');
+                                    "
+                                    id="EcoPlant"
+                                ></div>
+                            </div>
+                            <div class="lc-block">
+                                <div
+                                    lc-helper="background"
+                                    class="wall_img_2 rounded"
+                                    style="
+                                        background-size: cover;
+                                        background-position: center;
+                                        background-image: url('/img/45.jpg');
+                                    "
+                                    id="EcoPlant"
+                                ></div>
+                            </div>
+                            <div class="lc-block">
+                                <div
+                                    lc-helper="background"
+                                    class="wall_img_2 rounded"
+                                    style="
+                                        background-size: cover;
+                                        background-position: center;
+                                        background-image: url('/img/46.jpg');
+                                    "
+                                    id="EcoPlant"
+                                ></div>
+                            </div>
+                            
+                            <!-- /lc-block -->
+                        </div>
+                    </div>
+                    <!-- /lc-block -->
+                </div>
+                <!-- /col -->
+            </div>
+            <!--mas fotos-->
+
+            <!--mas fotos-->
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="lc-block">
+                                <div lc-helper="background" class="wall_img_1 rounded" style="background-size: cover; background-position: center; background-image: url('/img/1.jpg')" id="The Photo Title"></div>
+                                <div
+                                    lc-helper="background"
+                                    class="wall_img_1 rounded"
+                                    style="background-size: cover; background-position: center; background-image: url('/img/47.jpg')"
+                                    id="EcoPlant"
+                                ></div>
+                            </div>
+                            <!-- /lc-block -->
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="lc-block">
+                                <div lc-helper="background" class="wall_img_2 rounded" style="background-size: cover; background-position: center; background-image: url('/img/2.jpg')" id="My title goes here"></div>
+                            </div>
+                            <div class="lc-block">
+                                <div lc-helper="background" class="wall_img_2 rounded" style="background-size: cover; background-position: center; background-image: url('/img/3.jpg')" id="This is my landscape"></div>
+                            </div>
+                            <div class="lc-block">
+                                <div
+                                    lc-helper="background"
+                                    class="wall_img_2 rounded"
+                                    style="
+                                        background-size: cover;
+                                        background-position: center;
+                                        background-image: url('/img/48.jpg');
+                                    "
+                                    id="EcoPlant"
+                                ></div>
+                            </div>
+                            <!-- /lc-block -->
+                        </div>
+                    </div>
+                    <!-- /lc-block -->
+                </div>
+                <!-- /col -->
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="lc-block">
+                                <div
+                                    lc-helper="background"
+                                    class="wall_img_1 rounded"
+                                    style="
+                                        background-size: cover;
+                                        background-position: center;
+                                        background-image: url('/img/49.jpg');
+                                    "
+                                    id="EcoPlant"
+                                ></div>
+                            </div>
+                            <div class="lc-block">
+                                <div
+                                    lc-helper="background"
+                                    class="wall_img_1 rounded"
+                                    style="
+                                        background-size: cover;
+                                        background-position: center;
+                                        background-image: url('/img/50.jpg');
+                                    "
+                                    id="EcoPlant"
+                                ></div>
+                            </div>
+                            <!-- /lc-block -->
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="lc-block">
+                                <div
+                                    lc-helper="background"
+                                    class="wall_img_2 rounded"
+                                    style="
+                                        background-size: cover;
+                                        background-position: center;
+                                        background-image: url('/img/51.jpg');
+                                    "
+                                    id="EcoPlant"
+                                ></div>
+                            </div>
+                            <div class="lc-block">
+                                <div
+                                    lc-helper="background"
+                                    class="wall_img_2 rounded"
+                                    style="
+                                        background-size: cover;
+                                        background-position: center;
+                                        background-image: url('/img/52.jpg');
+                                    "
+                                    id="EcoPlant"
+                                ></div>
+                            </div>
+                            <div class="lc-block">
+                                <div
+                                    lc-helper="background"
+                                    class="wall_img_2 rounded"
+                                    style="
+                                        background-size: cover;
+                                        background-position: center;
+                                        background-image: url('/img/53.jpg');
+                                    "
+                                    id="EcoPlant"
+                                ></div>
+                            </div>
+                            
+                            <!-- /lc-block -->
+                        </div>
+                    </div>
+                    <!-- /lc-block -->
+                </div>
+                <!-- /col -->
+            </div>
+            <!--mas fotos-->
             <!-- /col -->
         </div>
         <!-- JavaScript Bundle with Popper -->
